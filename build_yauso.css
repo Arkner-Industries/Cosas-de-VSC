@@ -1,12 +1,26 @@
 body{
+    background-color: rgb(21, 84, 156);
     background-image: url(https://i.pinimg.com/originals/c9/b9/a6/c9b9a64adee72107775b43347fb9cca5.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin-right: 500px;
 }
 
-h1{
 
-    color: rgb(62, 201, 211);
-    
+h1 {
+    width: 1320px;
+    color: rgb(17, 143, 44);
+    text-shadow: 2px 2px 2px rgb(7, 104, 110);
+}
+
+
+strong {
+    color: rgb(17, 143, 44);
+    text-shadow: 2px 2px 2px rgb(7, 104, 110);
+}
+
+
+img {
+    width: 100px;
+    border-radius: 10px;
 }
