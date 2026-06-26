@@ -8,13 +8,18 @@
 body {
     background-image: url(https://images.steamusercontent.com/ugc/1751308203935637934/819BEFC5970A65A3386A7B224BCED8C3F4C742F0/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
     background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
+    background-size: 120% 110%;
+    background-position: 50% 50%;
+    animation: backgroundAnimation 30s ease infinite; /* Animación de fondo */
 }
 
-/* ========== ANIMACIONES DE ENTRADA ========== */
+@keyframes backgroundAnimation {
+    0% { background-size: 120% 110%; }
+    50% { background-size: 100% 100%; }
+    100% { background-size: 120% 110%; }
+}
 
-@keyframes fadeInDown {
+@keyframes fadeInDown { /* Animación para aparecer desde arriba hacia abajo */
     0% {
         opacity: 0;
         transform: translateY(-30px);
@@ -25,7 +30,7 @@ body {
     }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInUp {  /* Animacion de abajo hacia arriba */
     0% {
         opacity: 0;
         transform: translateY(30px) scale(0.9);
@@ -56,7 +61,6 @@ body {
     }
 }
 
-/* ========== ANIMACIONES PARA TEXTOS ========== */
 
 .animado-titulo {
     animation: fadeInDown 1s ease-out;
@@ -78,11 +82,10 @@ body {
     animation: brillo 3s ease-in-out infinite;
 }
 
-/* ========== BOTÓN INICIAR SESIÓN ========== */
 
 .caja_iniciar_sesion {
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 1250px;
     width: 110px;
     height: 50px;
@@ -101,6 +104,34 @@ body {
     box-shadow: 0px 0px 30px rgb(148, 55, 185);
 }
 
+.caja_registrarse {
+    position: absolute;
+    top: 50px;
+    left: 1250px;
+    width: 110px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 0px 1px 3px rgb(148, 55, 185);
+    margin: auto;
+    border-radius: 40px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.caja_registrarse:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgb(148, 55, 185);
+}
+
+.boton-registrarse {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
 .boton-iniciar {
     color: white;
     text-decoration: none;
@@ -108,12 +139,15 @@ body {
     transition: all 0.3s ease;
 }
 
-.boton-iniciar:hover {
+.boton-registrarse:hover {
     color: rgb(148, 55, 185);
     transform: scale(1.2);
 }
 
-/* ========== CAJA "LOL ES VIDA" ========== */
+.boton-iniciar:hover {
+    color: rgb(148, 55, 185);
+    transform: scale(1.2);
+}
 
 .caja1 {
     width: 60%;
@@ -133,8 +167,6 @@ body {
     transform: scale(1.02);
     box-shadow: 0px 0px 30px rgb(148, 55, 185);
 }
-
-/* ========== TEXTOS CON FONDO NEGRO ========== */
 
 h1, h2, h5, .parrafo2 {
     color: rgb(148, 55, 185);
@@ -168,8 +200,6 @@ h5 {
     font-size: 20px;
 }
 
-/* ========== PARRAFO 1 ========== */
-
 .parrafo1 {
     width: 60%;
     background-color: rgb(97, 87, 138);
@@ -188,7 +218,6 @@ h5 {
     box-shadow: 0px 0px 30px rgba(148, 55, 185, 0.5);
 }
 
-/* ========== IMAGEN PRINCIPAL ========== */
 
 .imagen-principal {
     width: 900px;
@@ -209,7 +238,6 @@ h5 {
     border-radius: 20px;
 }
 
-/* ========== TEXTO "UNA LISTA CON..." ========== */
 
 .strong1 {
     color: blueviolet;
@@ -228,7 +256,6 @@ h5 {
     text-shadow: 0px 0px 20px blueviolet;
 }
 
-/* ========== LISTA DE CAMPEONES ========== */
 
 .lista-campeones {
     list-style: none;
@@ -247,7 +274,6 @@ h5 {
 .lista-campeones li:nth-child(2) { animation-delay: 0.4s; }
 .lista-campeones li:nth-child(3) { animation-delay: 0.6s; }
 
-/* ========== BOTONES DE CAMPEONES ========== */
 
 .boton-campeon {
     background: none;
@@ -262,15 +288,15 @@ h5 {
 }
 
 .boton-campeon:hover {
-    transform: scale(1.3) rotate(10deg);
+    transform: scale(1.3) rotate(10deg); /* Ajusta la escala y la rotación según tus preferencias */
 }
 
 .img-campeon {
-    width: 50px !important;
+    width: 50px !important;  /* Ajusta el tamaño según tus necesidades */
     height: 50px !important;
     border-radius: 50%;
-    border: 3px solid transparent;
-    transition: all 0.3s ease;
+    border: 3px solid transparent; /* Borde inicial transparente */
+    transition: all 0.3s ease; /* Transición suave para el efecto de hover */
 }
 
 .boton-campeon:hover .img-campeon {
@@ -278,7 +304,6 @@ h5 {
     box-shadow: 0px 0px 30px rgb(148, 55, 185);
 }
 
-/* ========== RESPONSIVE ========== */
 
 @media (max-width: 1200px) {
     h1, h2, h5, .parrafo2 {

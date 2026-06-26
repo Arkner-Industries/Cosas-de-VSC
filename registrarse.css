@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(28, 10, 51);
+    background-attachment: fixed;
+    background-image: url(/home/arkner-industries/Escritorio/Cosas-de-VSC/imagenes/fiddelsticks_background.jpeg);
+    background-size: 120% 110%;
+    background-position: 50% 50%;
+    animation: backgroundAnimation 23s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: -10% 0%; }
+    50% { background-position: 90% 0%; }
+    100% { background-position: -10% 0%; }
+}
+
+.caja_acercate{
+    width: 200px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 0px 3px rgb(148, 55, 185);
+    margin: auto;
+    border-radius: 20px;
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+    
+    animation: fadeInDown 23s ease infinite;
+}
+
+.texto_acercate{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.caja_no_te_hare_dano {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 0px 3px rgb(148, 55, 185);
+    margin: auto;
+    border-radius: 20px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+
+    animation: fadeInDown2 23s ease infinite;
+}
+
+.texto_no_te_hare_dano {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+
+@keyframes fadeInDown2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    
+    30% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    55% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+    65% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    7% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+}
+
+.barra {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px rgb(148, 55, 185);
+    margin: auto;
+    border-radius: 20px;
+}
+
+strong{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
+    top: 33px;
+    left: 490px;
+}
+
+.boton_inicio {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(149, 74, 179);
+    position: absolute;
+    top: 33px;
+    left: 30px;
+}
+
+.caja_estructura {
+    padding: 42px;
+    margin: auto;
+    max-width: 500px;
+    height: 700px;
+}
+
+
+.caja_sesion {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px rgb(148, 55, 185);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 1;
+}
+
