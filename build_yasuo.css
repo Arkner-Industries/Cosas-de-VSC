@@ -1,6 +1,6 @@
 body {
     background-color: rgb(21, 84, 156);
-    background-image: url(/home/arkner-industries/Escritorio/Cosas-de-VSC/imagenes/ryze_background.jpg);
+    background-image: url(https://i.pinimg.com/originals/c9/b9/a6/c9b9a64adee72107775b43347fb9cca5.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin-right: 500px;
@@ -181,6 +181,3 @@ strong {
 .barra2 {
     margin-top: 20px;
 }
-
-
-
